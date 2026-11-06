@@ -1,0 +1,30 @@
+{
+    "name": "robo",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "v3": "*",
+        "Roboter Steuerung": "github:zukunftswerkstatt-buchholz/robot-control#v1.0.4",
+        "pxt-morse": "github:bsiever/pxt-morse#v2.0.1",
+        "my-controller": "github:aorczyk/my-controller#v2.2.8",
+        "audio-recording": "*",
+        "BLE HID Control": "github:calliope-edu/pxt-blehid#3e315fe8703dda1efc82ca677b17396eaff80990",
+        "bluetooth": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "8.1.15",
+        "targetId": "calliopemini"
+    },
+    "supportedTargets": [
+        "calliopemini"
+    ],
+    "preferredEditor": "blocksprj"
+}
