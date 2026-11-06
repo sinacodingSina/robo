@@ -1,4 +1,5 @@
 bluetooth.onBluetoothConnected(function () {
+    bluetooth.uartWriteNumber(7)
     keyboard.releaseKeys()
     keyboard.sendString("w")
     Roboter.driveTime(1000, Roboter.Dir.CW)
@@ -11,8 +12,6 @@ bluetooth.onBluetoothConnected(function () {
 })
 basic.setLedColor(0x00ff00)
 while (keyboard.isEnabled()) {
+    bluetooth.setTransmitPower(7)
     keyboard.startKeyboardService()
 }
-basic.forever(function () {
-	
-})
